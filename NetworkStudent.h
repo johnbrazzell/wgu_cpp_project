@@ -1,5 +1,3 @@
-#ifndef NETWORKSTUDENT_H
-#define NETWORKSTUDENT_H
 #include "Student.h"
 
 class NetworkStudent
@@ -13,4 +11,3 @@ private:
 
 };
 
-#endif // NETWORKSTUDENT_H

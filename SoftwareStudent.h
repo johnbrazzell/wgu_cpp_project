@@ -1,5 +1,3 @@
-#ifndef SOFTWARESTUDENT_H
-#define SOFTWARESTUDENT_H
 #include "Student.h"
 
 class SoftwareStudent
@@ -14,4 +12,3 @@ private:
 
 };
 
-#endif // SOFTWARESTUDENT_H

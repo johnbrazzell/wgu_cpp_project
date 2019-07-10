@@ -1,5 +1,3 @@
-#ifndef SECURITYSTUDENT_H
-#define SECURITYSTUDENT_H
 #include "Student.h"
 
 class SecurityStudent
@@ -13,4 +11,4 @@ private:
 
 };
 
-#endif // SECURITYSTUDENT_H
+

@@ -1,7 +1,5 @@
-#ifndef ROSTER_H
-#define ROSTER_H
-#include <stdio.h>
 #include <iostream>
+#include <string>
 #include "Student.h"
 using namespace std;
 
@@ -18,4 +16,3 @@ public:
 
 };
 
-#endif // ROSTER_H

@@ -8,7 +8,19 @@ Student::~Student()
 {
 }
 
-int Student::GetStudentAge()
+Student::Student(string studentID, string firstName, string lastName, string emailAddress, string studentAge, string *daysInCourse, Degree degree)
+{
+	_studentID = studentID;
+	_studentFirstName = firstName;
+	_studentLastName = lastName;
+	_studentEmailAddress = emailAddress;
+	_studentAge = studentAge;
+	//_daysInCourse = *daysInCourse;
+	degree = degree;
+
+}
+
+string Student::GetStudentAge()
 {
     return _studentAge;
 }
@@ -18,7 +30,7 @@ void Student::SetStudentAge(int studentAge)
     _studentAge = studentAge;
 }
 
-int Student::GetStudentID()
+string Student::GetStudentID()
 {
     return _studentID;
 }
@@ -58,7 +70,7 @@ void Student::SetEmailAddress(string studentEmailAddress)
     _studentEmailAddress = studentEmailAddress;
 }
 
-int *Student::GetDaysInCourse()
+string *Student::GetDaysInCourse()
 {
     return _daysInCourse;
 }
