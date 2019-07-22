@@ -99,7 +99,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="NetworkStudent.cpp" />
+    <ClCompile Include="NetworkingStudent.cpp" />
     <ClCompile Include="Roster.cpp" />
     <ClCompile Include="SecurityStudent.cpp" />
     <ClCompile Include="SoftwareStudent.cpp" />
@@ -107,7 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Degree.h" />
-    <ClInclude Include="NetworkStudent.h" />
+    <ClInclude Include="NetworkingStudent.h" />
     <ClInclude Include="Roster.h" />
     <ClInclude Include="SecurityStudent.h" />
     <ClInclude Include="SoftwareStudent.h" />

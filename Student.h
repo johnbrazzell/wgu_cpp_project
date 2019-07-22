@@ -1,7 +1,10 @@
 #include "Degree.h"
 #include <string>
 #include <array>
+#include <iostream>
 using namespace std;
+
+#pragma once
 
 class Student
 {
@@ -9,13 +12,14 @@ public:
     Student();
     ~Student();
 
-	Student(string studentID, string firstName, string lastName, string emailAddress, string studentAge, string *daysInCourse, Degree degree);
+	//Student(string studentID, string firstName, string lastName, string emailAddress, int studentAge, int *daysInCourse, Degree degree);
+	Student(string studentID, string firstName, string lastName, string emailAddress, int studentAge, int *daysInCourse, Degree degree);
 
-    string GetStudentAge();
+    int GetStudentAge();
     void SetStudentAge(int studentAge);
     
     string GetStudentID();
-    void SetStudentID(int studentId);
+    void SetStudentID(string studentId);
     
     string GetFirstName();
     void SetFirstName(string studentFirstName);
@@ -26,19 +30,27 @@ public:
     string GetEmailAddress();
     void SetEmailAddress(string studentEmailAddress);
     
-    string *GetDaysInCourse();
-    void SetDaysInCourse(int valueToAdd[], int index);
-    
-    //virtual GetDegreeProgram();
+    int *GetDaysInCourse();
+    //void SetDaysInCourse(int numberOfDaysToAdd[], int index);
+	void SetDaysInCourse(int *daysInCourse);
+	void SetDegreeProgram(Degree degree);
+    virtual Degree GetDegreeProgram();
+	virtual void Print();
+
+	const int SECURITY = static_cast<int>(Degree::SECURITY);
+	const int NETWORKING = static_cast<int>(Degree::NETWORKING);
+	const int SOFTWARE = static_cast<int>(Degree::SOFTWARE);
+	//virtual void Print();
+
 
 private:
-    string _studentAge;
+    int _studentAge;
+    int _daysInCourse[3];
     string _studentID;
     string _studentFirstName;
     string _studentLastName;
     string _studentEmailAddress;
-    string _daysInCourse[4];
-    
+	Degree _degree;
     
 };
 

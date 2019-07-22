@@ -1,13 +1,17 @@
 #include "Student.h"
 
-class SoftwareStudent
+class SoftwareStudent : public Student
 {
 public:
-    SoftwareStudent();
-    ~SoftwareStudent();
+
+	//using Student::Student;
+
+	SoftwareStudent(string studentID, string firstName, string lastName, string emailAddress, int studentAge, int *daysInCourse, Degree degree);
+	~SoftwareStudent();
+	Degree GetDegreeProgram() override;
     
 private:
-    Degree degreeType = Degree::SOFTWARE;
+    Degree _degreeType;
     
 
 };
