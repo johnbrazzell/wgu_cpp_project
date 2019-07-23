@@ -7,6 +7,7 @@ public:
     ~NetworkingStudent();
 	
 	Degree GetDegreeProgram() override;
+	void Print() override;
     
 private:
     Degree _degreeType = Degree::NETWORKING;

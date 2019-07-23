@@ -22,3 +22,10 @@ Degree SoftwareStudent::GetDegreeProgram()
 	return _degreeType;
 }
 
+void SoftwareStudent::Print()
+{
+
+	string degree = "SOFTWARE";
+	cout << SoftwareStudent::GetStudentID() << "\t" << SoftwareStudent::GetFirstName() << "\t" << SoftwareStudent::GetLastName() << "\t\t" << SoftwareStudent::GetEmailAddress() << "\t\t" << SoftwareStudent::GetStudentAge() << "\t" << SoftwareStudent::GetDaysInCourse()[0] << "," << SoftwareStudent::GetDaysInCourse()[1] << "," << SoftwareStudent::GetDaysInCourse()[2] << "\t" << degree << endl;
+}
+

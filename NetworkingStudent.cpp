@@ -21,3 +21,9 @@ Degree NetworkingStudent::GetDegreeProgram()
 	return _degreeType;
 }
 
+void NetworkingStudent::Print()
+{
+	string degree = "NETWORKING";
+	cout << NetworkingStudent::GetStudentID() << "\t" << NetworkingStudent::GetFirstName() << "\t" << NetworkingStudent::GetLastName() << "\t\t" << NetworkingStudent::GetEmailAddress() << "\t\t" << NetworkingStudent::GetStudentAge() << "\t" << NetworkingStudent::GetDaysInCourse()[0] << "," << NetworkingStudent::GetDaysInCourse()[1] << "," << NetworkingStudent::GetDaysInCourse()[2] << "\t" << degree << endl;
+}
+
